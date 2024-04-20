@@ -9,7 +9,7 @@ app.use(express.json());
 
 const PORT = 8080;
 
-dbConnection().then(() => console.log('Connect to MongoDB'));
+dbConnection().then(() => console.log('Connect to MongoDB')).catch((error)=>console.log(error))
 
 app.use('/api', apiRouter);
 
