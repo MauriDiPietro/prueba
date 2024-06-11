@@ -15,9 +15,7 @@ app.use('/api', apiRouter);
 
 app.use(errorHandler);
 
-app.listen(PORT, ()=>{
-    console.log(`Server OK on port: ${PORT}`);
-})
+app.listen(PORT, ()=> console.log(`Server OK on port: ${PORT}`));
 
 
 
